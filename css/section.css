@@ -1,0 +1,35 @@
+section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+section .left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+section .right {
+    width: 50%;
+}
+
+section .left,
+section .right {
+    margin: 0;
+}
+
+@media screen and (max-width: 1400px) {
+    section {
+        flex-direction: column;
+    }
+
+    section .left,
+    section .right {
+        margin-top: 3rem;
+        width: 100%;
+    }
+}

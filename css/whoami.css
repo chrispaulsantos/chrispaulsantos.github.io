@@ -1,0 +1,63 @@
+#whoami h2 {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+
+#whoami h2 i {
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+}
+
+#sphere {
+    transform-style: preserve-3d;
+    position: relative;
+    animation: rotating 20s infinite linear;
+    width: 450px;
+    height: 450px;
+    top: 0;
+    left: 0;
+}
+
+.point {
+    position: absolute;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+        -webkit-transform: rotate3d(1, 1, 0, 360deg);
+        -o-transform: rotate3d(1, 1, 0, 360deg);
+        transform: rotate3d(1, 1, 0, 360deg);
+    }
+    to {
+        -webkit-transform: rotate3d(1, 1, 0, 0deg);
+        -o-transform: rotate3d(1, 1, 0, 0deg);
+        transform: rotate3d(1, 1, 0, 0deg);
+    }
+}
+@keyframes rotating {
+    from {
+        -ms-transform: rotate3d(1, 1, 0, 360deg);
+        -moz-transform: rotate3d(1, 1, 0, 360deg);
+        -webkit-transform: rotate3d(1, 1, 0, 360deg);
+        -o-transform: rotate3d(1, 1, 0, 360deg);
+        transform: rotate3d(1, 1, 0, 360deg);
+    }
+    to {
+        -ms-transform: rotate3d(1, 1, 0, 0deg);
+        -moz-transform: rotate3d(1, 1, 0, 0deg);
+        -webkit-transform: rotate3d(1, 1, 0, 0deg);
+        -o-transform: rotate3d(1, 1, 0, 0deg);
+        transform: rotate3d(1, 1, 0, 0deg);
+    }
+}
+.rotating {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}

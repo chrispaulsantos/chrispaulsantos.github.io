@@ -1,0 +1,52 @@
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    padding: 1rem;
+}
+
+header > div {
+    font-weight: bold;
+}
+
+header > div > div:first-child {
+    font-size: 36px;
+    line-height: 30px;
+}
+
+header > div > div:last-child {
+    font-size: 48px;
+    line-height: 40px;
+}
+
+header ul {
+    margin-left: auto;
+    display: flex;
+}
+
+header ul li {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease-out;
+
+    list-style: none;
+}
+
+header ul li.logo {
+    width: 48px;
+}
+
+header ul li.logo img {
+    height: 24px;
+}
+
+header ul li:hover {
+    position: relative;
+    transform: translate(-1px, -3px);
+}
